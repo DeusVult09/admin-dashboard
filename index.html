@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="dashboard">
@@ -72,7 +75,7 @@
             </div>
             <div class="greeting-container">
                 <span class="greeting">High there,</span>
-                <span class="user-name">Zara Vult(@zarav)</span>
+                <span id="user-name">Zara Vult(@zarav)</span>
             </div>
             
             <div class="btn-wrapper" role="group" aria-label="File actions">
@@ -92,32 +95,62 @@
                 <h3>Super Cool Projects</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+                <div class="card-container">
+                    <img class="share" src="./assets/eye-plus-outline.svg" alt="">
+                    <img class="share" src="./assets/share-all.svg" alt="">
+                    <img class="share" src="./assets/pen-plus.svg" alt="">
+                </div>
             </article>
             
             <article class="project">
                 <h3>Less Cool Project</h3>  
                 <p>Qui recusandae voluptatem nam galisum nostrum et laudantium earum ab magni porro.
-                    Ex voluptas recusandae.</p>
+                    Ex voluptas recusandae eos eius error aut ratione</p>
+                <div class="card-container">
+                    <img class="share" src="./assets/eye-plus-outline.svg" alt="">
+                    <img class="share" src="./assets/share-all.svg" alt="">
+                    <img class="share" src="./assets/pen-plus.svg" alt="">
+                </div>
             </article>
             <article class="project">
                 <h3>Impossible App</h3>
                 <p>At perferendis culpa in asperiores omnis est assumenda galisum aut
                     laudantium aperiam quo quia eaque nostrum et.</p>
+                <div class="card-container">
+                    <img class="share" src="./assets/eye-plus-outline.svg" alt="">
+                    <img class="share" src="./assets/share-all.svg" alt="">
+                    <img class="share" src="./assets/pen-plus.svg" alt="">
+                </div>
             </article>
             <article class="project">
                 <h3>Easy Peasy App</h3>
                 <p>Sed magnam alias eos blanditiis quia non
-                    praesentium sunt non iste omnis est magni ipsam.</p>
+                    praesentium sunt non iste omnis est magni ipsam. laudantium aperiam quo quia.</p>
+                <div class="card-container">
+                    <img class="share" src="./assets/eye-plus-outline.svg" alt="">
+                    <img class="share" src="./assets/share-all.svg" alt="">
+                    <img class="share" src="./assets/pen-plus.svg" alt="">
+                </div>
             </article>
             <article class="project">
                 <h3>Ad Blocker</h3>
                 <p>Est odio iusto eos eius error aut ratione necessitatibus sit
                     blanditiis corrupti a expedita ipsa et porro molestiae quo maiores numquam.</p>
+                <div class="card-container">
+                    <img class="share" src="./assets/eye-plus-outline.svg" alt="">
+                    <img class="share" src="./assets/share-all.svg" alt="">
+                    <img class="share" src="./assets/pen-plus.svg" alt="">
+                </div>
             </article>
             <article class="project">
                 <h3>Money maker</h3>
                 <p>Vel commodi Quis et alias quam ut
-                    facere voluptatibus sit obcaecati delectus quo.</p>
+                    facere eos eius error aut ratione voluptatibus sit obcaecati delectus quo, laudantium aperiam quo quia.</p>
+                <div class="card-container">
+                    <img class="share" src="./assets/eye-plus-outline.svg" alt="">
+                    <img class="share" src="./assets/share-all.svg" alt="">
+                    <img class="share" src="./assets/pen-plus.svg" alt="">
+                </div>
             </article>
         </section>
 
@@ -150,7 +183,7 @@
             <section class="trending">
                 
                 <div class="trending-user">
-                    <div class="trending-avatar">
+                    <div class="trending-avatar" id="first">
                         <img class="user" src="./assets/cat.png" alt="avatar image">
                     </div>
                     <div class="user-info">
@@ -160,7 +193,7 @@
                 </div>
 
                 <div class="trending-user">
-                    <div class="trending-avatar">
+                    <div class="trending-avatar" id="second">
                         <img class="user" src="./assets/happy.png" alt="avatar image">
                     </div>
                     <div class="user-info">
@@ -171,7 +204,7 @@
 
                 <div class="trending-user">
                     <div class="trending-avatar">
-                        <img class="user" src="./assets/penguin.png" alt="avatar image">
+                        <img class="user" id="third" src="./assets/penguin.png" alt="avatar image">
                     </div>
                     <div class="user-info">
                         <span>@kendall</span>
@@ -180,7 +213,7 @@
                 </div>
 
                 <div class="trending-user">
-                    <div class="trending-avatar">
+                    <div class="trending-avatar" id="fourth">
                         <img class="user" src="./assets/chick.png" alt="avatar image">
                     </div>
                     <div class="user-info">

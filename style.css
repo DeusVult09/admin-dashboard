@@ -16,8 +16,38 @@
 
 .sidebar {
     grid-row: 1 / -1;
-    background-color: aquamarine;
+    background-color: rgb(190, 207, 240); 
+    padding: 25px;
+    
 }
+
+.sidebar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+span {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.sidebar-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 
 .header {
     grid-column: 2;
@@ -33,7 +63,7 @@
 .bar {
     width: 450px;
     height: 25px;
-    background-color: rgb(212, 238, 225);
+    background-color: rgb(221, 224, 231); 
     border-radius: 15px;
     margin: 0 85px 0 15px;
 }
@@ -71,6 +101,7 @@
     align-items: center;
     margin: 35px 0 0 35px;
     padding-bottom: 15px;
+    
 }
 
 .greeting-container {
@@ -81,6 +112,20 @@
     
 }
 
+.greeting {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-name {
+    font-weight: 600;
+}
+
+#user-name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
 .btn-wrapper {
     display: flex;
     justify-content: space-between;
@@ -89,16 +134,31 @@
 }
 
 .button, .button1 {
-    background-color:aquamarine;
+    background-color: rgb(190, 207, 240); 
     border-radius: 15px;
     padding: 7px 20px 7px 20px;
     border-style: none;
-
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    transition: transform 0.3s, background-color 0.3s ease-out;
 }
 
 .button1 {
     padding: 7px 27px 7px 27px; 
 }
+
+button {
+    transition: transform 0.3s, background-color 0.3s ease-out;
+}
+
+button:hover {
+    background-color: #da99e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #060e11;
+    font-weight: bolder;
+    transform: translateY(-1px);
+}
+
 
 
 .icon, 
@@ -147,10 +207,20 @@
     grid-column: 1 / -1;
     margin: 0;
     padding-top: 15px;
+    font-weight: 600;
+    font-family: 'Outfit';
+}
+
+h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 p {
     padding-top: 5px;
+    font-size: 11px;
+    font-family: 'Happy Monkey', sans-serif;
 }
 
 .project {
@@ -158,8 +228,28 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(214, 6, 6, 0.15);
+    background-color:rgb(197, 189, 179);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.share {
+    width: 20px;
+    height: auto;
+}
 
 .trending-avatar {
     border-radius: 50%;
@@ -187,6 +277,13 @@ p {
 
 .announcement {
     padding-bottom: 20px;
+}
+
+h4 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 .caption {
@@ -220,4 +317,21 @@ p {
     display: flex;
     flex-direction: column;
     padding-left: 5px;
+}
+
+.user-info span:last-child {
+    font-size: 12px;
+    color: rgb(127, 127, 127);
+}
+
+#first {
+    background-color:rgb(199, 199, 199);
+}
+
+#second {
+    background-color: rgb(168, 168, 231);
+}
+
+#fourth {
+    background-color:rgb(237, 177, 197);
 }
