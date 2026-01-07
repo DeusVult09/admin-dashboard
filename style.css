@@ -196,10 +196,11 @@ button:hover {
 
 .projects {
     display: grid; 
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 3fr));
     gap: 15px;
     padding-left: 25px;
     padding-bottom: 25px;
+    
 }
 
 .projects > h2 {
